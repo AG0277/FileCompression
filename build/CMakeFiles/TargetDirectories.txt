@@ -1,0 +1,14 @@
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/fileCompression.dir
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/edit_cache.dir
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/list_install_components.dir
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/install.dir
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/install/local.dir
+C:/Users/Artur/source/repos/FileCompression/build/CMakeFiles/install/strip.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/fmt.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/edit_cache.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/rebuild_cache.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/list_install_components.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/install.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/install/local.dir
+C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build/CMakeFiles/install/strip.dir

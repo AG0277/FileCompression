@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\fileCompression.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\fileCompression.dir/objects.a @CMakeFiles\fileCompression.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\fileCompression.dir/objects.a -Wl,--no-whole-archive -o fileCompression.exe -Wl,--out-implib,libfileCompression.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fileCompression.dir\linkLibs.rsp

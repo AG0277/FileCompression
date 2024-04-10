@@ -1,0 +1,32 @@
+[
+{
+  "directory": "C:/Users/Artur/source/repos/FileCompression/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fileCompression.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fileCompression.dir\\main.cpp.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\FileCompression\\main.cpp",
+  "file": "C:/Users/Artur/source/repos/FileCompression/FileCompression/main.cpp",
+  "output": "CMakeFiles/fileCompression.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Artur/source/repos/FileCompression/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fileCompression.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fileCompression.dir\\InputFile.cpp.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\FileCompression\\InputFile.cpp",
+  "file": "C:/Users/Artur/source/repos/FileCompression/FileCompression/InputFile.cpp",
+  "output": "CMakeFiles/fileCompression.dir/InputFile.cpp.obj"
+},
+{
+  "directory": "C:/Users/Artur/source/repos/FileCompression/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fileCompression.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fileCompression.dir\\HuffmanAlgorithm.cpp.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\FileCompression\\HuffmanAlgorithm.cpp",
+  "file": "C:/Users/Artur/source/repos/FileCompression/FileCompression/HuffmanAlgorithm.cpp",
+  "output": "CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj"
+},
+{
+  "directory": "C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fmt.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fmt.dir\\src\\format.cc.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\build\\_deps\\fmt-src\\src\\format.cc",
+  "file": "C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-src/src/format.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.obj"
+},
+{
+  "directory": "C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fmt.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fmt.dir\\src\\os.cc.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\build\\_deps\\fmt-src\\src\\os.cc",
+  "file": "C:/Users/Artur/source/repos/FileCompression/build/_deps/fmt-src/src/os.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.obj"
+}
+]
