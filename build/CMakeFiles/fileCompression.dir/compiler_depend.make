@@ -18,6 +18,7 @@ CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj: C:/Users/Artur/source/r
   C:/msys64/ucrt64/include/c++/13.1.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_forced.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/deque.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/enable_special_members.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/erase_if.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/exception.h \
@@ -48,18 +49,25 @@ CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj: C:/Users/Artur/source/r
   C:/msys64/ucrt64/include/c++/13.1.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algobase.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_construct.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_deque.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_function.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_heap.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_pair.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_queue.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_uninitialized.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_vector.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/string_view.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stringfwd.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/unordered_map.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/utility.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/vector.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/cctype \
   C:/msys64/ucrt64/include/c++/13.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/13.1.0/clocale \
@@ -71,6 +79,7 @@ CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj: C:/Users/Artur/source/r
   C:/msys64/ucrt64/include/c++/13.1.0/cwchar \
   C:/msys64/ucrt64/include/c++/13.1.0/debug/assertions.h \
   C:/msys64/ucrt64/include/c++/13.1.0/debug/debug.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/deque \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/aligned_buffer.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/alloc_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/numeric_traits.h \
@@ -81,12 +90,14 @@ CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj: C:/Users/Artur/source/r
   C:/msys64/ucrt64/include/c++/13.1.0/new \
   C:/msys64/ucrt64/include/c++/13.1.0/numbers \
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/queue \
   C:/msys64/ucrt64/include/c++/13.1.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/13.1.0/string \
   C:/msys64/ucrt64/include/c++/13.1.0/string_view \
   C:/msys64/ucrt64/include/c++/13.1.0/tuple \
   C:/msys64/ucrt64/include/c++/13.1.0/type_traits \
   C:/msys64/ucrt64/include/c++/13.1.0/unordered_map \
+  C:/msys64/ucrt64/include/c++/13.1.0/vector \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++locale.h \
@@ -305,6 +316,7 @@ CMakeFiles/fileCompression.dir/main.cpp.obj: C:/Users/Artur/source/repos/FileCom
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_forced.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_init_exception.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/deque.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/enable_special_members.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/erase_if.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/exception.h \
@@ -352,18 +364,23 @@ CMakeFiles/fileCompression.dir/main.cpp.obj: C:/Users/Artur/source/repos/FileCom
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/std_mutex.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_algobase.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_construct.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_deque.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_function.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_heap.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_types.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_multiset.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_pair.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_queue.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_raw_storage_iter.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_set.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_tempbuf.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_tree.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_uninitialized.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_vector.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/stream_iterator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/streambuf.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/streambuf_iterator.h \
@@ -374,6 +391,7 @@ CMakeFiles/fileCompression.dir/main.cpp.obj: C:/Users/Artur/source/repos/FileCom
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/13.1.0/bits/utility.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/bits/vector.tcc \
   C:/msys64/ucrt64/include/c++/13.1.0/cctype \
   C:/msys64/ucrt64/include/c++/13.1.0/cerrno \
   C:/msys64/ucrt64/include/c++/13.1.0/clocale \
@@ -389,6 +407,7 @@ CMakeFiles/fileCompression.dir/main.cpp.obj: C:/Users/Artur/source/repos/FileCom
   C:/msys64/ucrt64/include/c++/13.1.0/cwctype \
   C:/msys64/ucrt64/include/c++/13.1.0/debug/assertions.h \
   C:/msys64/ucrt64/include/c++/13.1.0/debug/debug.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/deque \
   C:/msys64/ucrt64/include/c++/13.1.0/exception \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/aligned_buffer.h \
   C:/msys64/ucrt64/include/c++/13.1.0/ext/alloc_traits.h \
@@ -412,6 +431,7 @@ CMakeFiles/fileCompression.dir/main.cpp.obj: C:/Users/Artur/source/repos/FileCom
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/execution_defs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/glue_memory_defs.h \
   C:/msys64/ucrt64/include/c++/13.1.0/pstl/pstl_config.h \
+  C:/msys64/ucrt64/include/c++/13.1.0/queue \
   C:/msys64/ucrt64/include/c++/13.1.0/set \
   C:/msys64/ucrt64/include/c++/13.1.0/stdexcept \
   C:/msys64/ucrt64/include/c++/13.1.0/stdlib.h \
@@ -435,6 +455,7 @@ CMakeFiles/fileCompression.dir/main.cpp.obj: C:/Users/Artur/source/repos/FileCom
   C:/msys64/ucrt64/include/c++/13.1.0/type_traits \
   C:/msys64/ucrt64/include/c++/13.1.0/typeinfo \
   C:/msys64/ucrt64/include/c++/13.1.0/unordered_map \
+  C:/msys64/ucrt64/include/c++/13.1.0/vector \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -505,8 +526,6 @@ C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bit:
 
-C:/msys64/ucrt64/include/c++/13.1.0/clocale:
-
 C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/error_constants.h:
@@ -519,8 +538,6 @@ C:/msys64/ucrt64/include/_mingw_mac.h:
 
 C:/msys64/ucrt64/include/_mingw_off_t.h:
 
-C:/msys64/ucrt64/include/c++/13.1.0/concepts:
-
 C:/msys64/ucrt64/include/c++/13.1.0/backward/binders.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/new_allocator.h:
@@ -532,8 +549,6 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/ostream_insert.h:
 C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets.tcc:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/allocator.h:
-
-C:/msys64/ucrt64/include/c++/13.1.0/bits/utility.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_pair.h:
 
@@ -561,6 +576,10 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_ptr.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/charconv.h:
 
+C:/msys64/ucrt64/include/c++/13.1.0/iosfwd:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_vector.h:
+
 C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++locale.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/concept_check.h:
@@ -570,6 +589,14 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/streambuf.tcc:
 C:/msys64/ucrt64/include/c++/13.1.0/bits/cxxabi_forced.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/ranges_cmp.h:
+
+C:/msys64/ucrt64/include/ctype.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_heap.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/tr1/modified_bessel_func.tcc:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/deque.tcc:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/unordered_map.h:
 
@@ -581,9 +608,13 @@ C:/msys64/ucrt64/include/c++/13.1.0/cstdint:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/erase_if.h:
 
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_queue.h:
+
 C:/msys64/ucrt64/include/c++/13.1.0/bits/exception.h:
 
-C:/msys64/ucrt64/include/c++/13.1.0/cerrno:
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_deque.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/queue:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_defines.h:
 
@@ -613,6 +644,8 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/max_size_type.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/memory_resource.h:
 
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h:
+
 C:/msys64/ucrt64/include/c++/13.1.0/bits/move.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/cwchar:
@@ -641,8 +674,6 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/ranges_util.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/refwrap.h:
 
-C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator_args.h:
-
 C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_funcs.h:
@@ -651,9 +682,25 @@ C:/msys64/ucrt64/include/c++/13.1.0/ext/numeric_traits.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_iterator_base_types.h:
 
+C:/msys64/ucrt64/include/c++/13.1.0/bits/ios_base.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_uninitialized.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/uses_allocator_args.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/utility.h:
+
+C:/msys64/ucrt64/include/c++/13.1.0/bits/vector.tcc:
+
 C:/msys64/ucrt64/include/c++/13.1.0/cctype:
 
+C:/msys64/ucrt64/include/c++/13.1.0/cerrno:
+
+C:/msys64/ucrt64/include/c++/13.1.0/clocale:
+
 C:/msys64/ucrt64/include/c++/13.1.0/compare:
+
+C:/msys64/ucrt64/include/c++/13.1.0/concepts:
 
 C:/msys64/ucrt64/include/sys/timeb.h:
 
@@ -667,6 +714,8 @@ C:/msys64/ucrt64/include/c++/13.1.0/debug/assertions.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/debug/debug.h:
 
+C:/msys64/ucrt64/include/c++/13.1.0/deque:
+
 C:/msys64/ucrt64/include/c++/13.1.0/ext/aligned_buffer.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/ext/string_conversions.h:
@@ -674,8 +723,6 @@ C:/msys64/ucrt64/include/c++/13.1.0/ext/string_conversions.h:
 C:/msys64/ucrt64/include/c++/13.1.0/ext/type_traits.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/initializer_list:
-
-C:/msys64/ucrt64/include/c++/13.1.0/iosfwd:
 
 C:/msys64/ucrt64/include/c++/13.1.0/new:
 
@@ -699,6 +746,8 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/allocated_ptr.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/unordered_map:
 
+C:/msys64/ucrt64/include/c++/13.1.0/vector:
+
 C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_classes.h:
@@ -720,8 +769,6 @@ C:/msys64/ucrt64/include/stdlib.h:
 C:/msys64/ucrt64/include/corecrt_wstdlib.h:
 
 C:/msys64/ucrt64/include/crtdefs.h:
-
-C:/msys64/ucrt64/include/ctype.h:
 
 C:/msys64/ucrt64/include/errno.h:
 
@@ -778,10 +825,6 @@ C:/msys64/ucrt64/include/c++/13.1.0/bits/basic_ios.tcc:
 C:/msys64/ucrt64/include/c++/13.1.0/bits/codecvt.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/fstream.tcc:
-
-C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_uninitialized.h:
-
-C:/msys64/ucrt64/include/c++/13.1.0/bits/ios_base.h:
 
 C:/msys64/ucrt64/include/c++/13.1.0/bits/istream.tcc:
 
@@ -914,8 +957,6 @@ C:/msys64/ucrt64/include/c++/13.1.0/tr1/exp_integral.tcc:
 C:/msys64/ucrt64/include/c++/13.1.0/tr1/gamma.tcc:
 
 C:/msys64/ucrt64/include/c++/13.1.0/tr1/hypergeometric.tcc:
-
-C:/msys64/ucrt64/include/c++/13.1.0/tr1/modified_bessel_func.tcc:
 
 C:/msys64/ucrt64/include/c++/13.1.0/tr1/poly_laguerre.tcc:
 

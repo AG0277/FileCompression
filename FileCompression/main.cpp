@@ -13,4 +13,5 @@ int main()
     string text = LoadFile(filePath);
     std::cout << text;
     HuffmanAlgorithm huffman(text);
+    huffman.encodedText();
 }
