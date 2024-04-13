@@ -83,20 +83,20 @@ CMakeFiles/fileCompression.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileCompression.dir/main.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Artur\source\repos\FileCompression\FileCompression\main.cpp -o CMakeFiles\fileCompression.dir\main.cpp.s
 
-CMakeFiles/fileCompression.dir/InputFile.cpp.obj: CMakeFiles/fileCompression.dir/flags.make
-CMakeFiles/fileCompression.dir/InputFile.cpp.obj: CMakeFiles/fileCompression.dir/includes_CXX.rsp
-CMakeFiles/fileCompression.dir/InputFile.cpp.obj: C:/Users/Artur/source/repos/FileCompression/FileCompression/InputFile.cpp
-CMakeFiles/fileCompression.dir/InputFile.cpp.obj: CMakeFiles/fileCompression.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Artur\source\repos\FileCompression\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fileCompression.dir/InputFile.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileCompression.dir/InputFile.cpp.obj -MF CMakeFiles\fileCompression.dir\InputFile.cpp.obj.d -o CMakeFiles\fileCompression.dir\InputFile.cpp.obj -c C:\Users\Artur\source\repos\FileCompression\FileCompression\InputFile.cpp
+CMakeFiles/fileCompression.dir/FileOperations.cpp.obj: CMakeFiles/fileCompression.dir/flags.make
+CMakeFiles/fileCompression.dir/FileOperations.cpp.obj: CMakeFiles/fileCompression.dir/includes_CXX.rsp
+CMakeFiles/fileCompression.dir/FileOperations.cpp.obj: C:/Users/Artur/source/repos/FileCompression/FileCompression/FileOperations.cpp
+CMakeFiles/fileCompression.dir/FileOperations.cpp.obj: CMakeFiles/fileCompression.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Artur\source\repos\FileCompression\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fileCompression.dir/FileOperations.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fileCompression.dir/FileOperations.cpp.obj -MF CMakeFiles\fileCompression.dir\FileOperations.cpp.obj.d -o CMakeFiles\fileCompression.dir\FileOperations.cpp.obj -c C:\Users\Artur\source\repos\FileCompression\FileCompression\FileOperations.cpp
 
-CMakeFiles/fileCompression.dir/InputFile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileCompression.dir/InputFile.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Artur\source\repos\FileCompression\FileCompression\InputFile.cpp > CMakeFiles\fileCompression.dir\InputFile.cpp.i
+CMakeFiles/fileCompression.dir/FileOperations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fileCompression.dir/FileOperations.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Artur\source\repos\FileCompression\FileCompression\FileOperations.cpp > CMakeFiles\fileCompression.dir\FileOperations.cpp.i
 
-CMakeFiles/fileCompression.dir/InputFile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileCompression.dir/InputFile.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Artur\source\repos\FileCompression\FileCompression\InputFile.cpp -o CMakeFiles\fileCompression.dir\InputFile.cpp.s
+CMakeFiles/fileCompression.dir/FileOperations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fileCompression.dir/FileOperations.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Artur\source\repos\FileCompression\FileCompression\FileOperations.cpp -o CMakeFiles\fileCompression.dir\FileOperations.cpp.s
 
 CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj: CMakeFiles/fileCompression.dir/flags.make
 CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj: CMakeFiles/fileCompression.dir/includes_CXX.rsp
@@ -116,14 +116,14 @@ CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.s: cmake_force
 # Object files for target fileCompression
 fileCompression_OBJECTS = \
 "CMakeFiles/fileCompression.dir/main.cpp.obj" \
-"CMakeFiles/fileCompression.dir/InputFile.cpp.obj" \
+"CMakeFiles/fileCompression.dir/FileOperations.cpp.obj" \
 "CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj"
 
 # External object files for target fileCompression
 fileCompression_EXTERNAL_OBJECTS =
 
 fileCompression.exe: CMakeFiles/fileCompression.dir/main.cpp.obj
-fileCompression.exe: CMakeFiles/fileCompression.dir/InputFile.cpp.obj
+fileCompression.exe: CMakeFiles/fileCompression.dir/FileOperations.cpp.obj
 fileCompression.exe: CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj
 fileCompression.exe: CMakeFiles/fileCompression.dir/build.make
 fileCompression.exe: _deps/fmt-build/libfmtd.a

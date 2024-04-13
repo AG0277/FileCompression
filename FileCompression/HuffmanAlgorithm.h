@@ -1,7 +1,12 @@
+#pragma once
+
 #include <string>
 using std::string;
 #include <unordered_map>
 #include <queue>
+#include <fstream>
+#include <bitset>
+#include <iostream>
 
 struct HuffmanNode{
     string character;
@@ -9,6 +14,7 @@ struct HuffmanNode{
     unsigned int NuOfAppearances;
     HuffmanNode *left, *right;
     HuffmanNode(string character, unsigned int NuOfAppearances) : character(character), NuOfAppearances(NuOfAppearances), encoding(""), left(nullptr), right(nullptr) {}
+    HuffmanNode(): character("test"), NuOfAppearances(0), encoding(""), left(nullptr), right(nullptr) {}
 };
 
 class HuffmanAlgorithm
@@ -16,13 +22,19 @@ class HuffmanAlgorithm
 private:
     string text;
     std::unordered_map<char, string> HuffmanCode;
-    HuffmanNode *BuildHuffmanTree();
+    HuffmanNode* constructedTree;
+    void BuildHuffmanTree();
     void GenerateHuffmanCode(HuffmanNode *root);
+    void serializeNode(const HuffmanNode *node, string& text);
+    int index;
+    int getIndex();
+    HuffmanNode* readNode(string &text, int index);
 
 public:
-    HuffmanAlgorithm(const string& textToFormat);
+    HuffmanAlgorithm(): index(0){};
     ~HuffmanAlgorithm();
-        string encodedText();
+    string decodeText(const string& textToDecode);
+    string encodeText(const string& textToEncode);
+    HuffmanNode* getHuffmanNode();
 };
-
 

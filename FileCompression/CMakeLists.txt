@@ -13,5 +13,5 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(fmt)
 
-add_executable(fileCompression main.cpp InputFile.cpp HuffmanAlgorithm.cpp)
+add_executable(fileCompression main.cpp FileOperations.cpp HuffmanAlgorithm.cpp)
 target_link_libraries(fileCompression PRIVATE fmt::fmt)

@@ -186,6 +186,30 @@ fmt/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\fmt-build\CMakeFiles\fmt.dir\build.make _deps/fmt-build/CMakeFiles/fmt.dir/build
 .PHONY : fmt/fast
 
+FileOperations.obj: FileOperations.cpp.obj
+.PHONY : FileOperations.obj
+
+# target to build an object file
+FileOperations.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/FileOperations.cpp.obj
+.PHONY : FileOperations.cpp.obj
+
+FileOperations.i: FileOperations.cpp.i
+.PHONY : FileOperations.i
+
+# target to preprocess a source file
+FileOperations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/FileOperations.cpp.i
+.PHONY : FileOperations.cpp.i
+
+FileOperations.s: FileOperations.cpp.s
+.PHONY : FileOperations.s
+
+# target to generate assembly for a file
+FileOperations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/FileOperations.cpp.s
+.PHONY : FileOperations.cpp.s
+
 HuffmanAlgorithm.obj: HuffmanAlgorithm.cpp.obj
 .PHONY : HuffmanAlgorithm.obj
 
@@ -209,30 +233,6 @@ HuffmanAlgorithm.s: HuffmanAlgorithm.cpp.s
 HuffmanAlgorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.s
 .PHONY : HuffmanAlgorithm.cpp.s
-
-InputFile.obj: InputFile.cpp.obj
-.PHONY : InputFile.obj
-
-# target to build an object file
-InputFile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/InputFile.cpp.obj
-.PHONY : InputFile.cpp.obj
-
-InputFile.i: InputFile.cpp.i
-.PHONY : InputFile.i
-
-# target to preprocess a source file
-InputFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/InputFile.cpp.i
-.PHONY : InputFile.cpp.i
-
-InputFile.s: InputFile.cpp.s
-.PHONY : InputFile.s
-
-# target to generate assembly for a file
-InputFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\fileCompression.dir\build.make CMakeFiles/fileCompression.dir/InputFile.cpp.s
-.PHONY : InputFile.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -272,12 +272,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... fileCompression
 	@echo ... fmt
+	@echo ... FileOperations.obj
+	@echo ... FileOperations.i
+	@echo ... FileOperations.s
 	@echo ... HuffmanAlgorithm.obj
 	@echo ... HuffmanAlgorithm.i
 	@echo ... HuffmanAlgorithm.s
-	@echo ... InputFile.obj
-	@echo ... InputFile.i
-	@echo ... InputFile.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

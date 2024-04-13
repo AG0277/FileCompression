@@ -7,9 +7,9 @@
 },
 {
   "directory": "C:/Users/Artur/source/repos/FileCompression/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fileCompression.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fileCompression.dir\\InputFile.cpp.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\FileCompression\\InputFile.cpp",
-  "file": "C:/Users/Artur/source/repos/FileCompression/FileCompression/InputFile.cpp",
-  "output": "CMakeFiles/fileCompression.dir/InputFile.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/fileCompression.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\fileCompression.dir\\FileOperations.cpp.obj -c C:\\Users\\Artur\\source\\repos\\FileCompression\\FileCompression\\FileOperations.cpp",
+  "file": "C:/Users/Artur/source/repos/FileCompression/FileCompression/FileOperations.cpp",
+  "output": "CMakeFiles/fileCompression.dir/FileOperations.cpp.obj"
 },
 {
   "directory": "C:/Users/Artur/source/repos/FileCompression/build",

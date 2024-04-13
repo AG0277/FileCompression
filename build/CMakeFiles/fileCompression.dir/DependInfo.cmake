@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Artur/source/repos/FileCompression/FileCompression/FileOperations.cpp" "CMakeFiles/fileCompression.dir/FileOperations.cpp.obj" "gcc" "CMakeFiles/fileCompression.dir/FileOperations.cpp.obj.d"
   "C:/Users/Artur/source/repos/FileCompression/FileCompression/HuffmanAlgorithm.cpp" "CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj" "gcc" "CMakeFiles/fileCompression.dir/HuffmanAlgorithm.cpp.obj.d"
-  "C:/Users/Artur/source/repos/FileCompression/FileCompression/InputFile.cpp" "CMakeFiles/fileCompression.dir/InputFile.cpp.obj" "gcc" "CMakeFiles/fileCompression.dir/InputFile.cpp.obj.d"
   "C:/Users/Artur/source/repos/FileCompression/FileCompression/main.cpp" "CMakeFiles/fileCompression.dir/main.cpp.obj" "gcc" "CMakeFiles/fileCompression.dir/main.cpp.obj.d"
   )
 
