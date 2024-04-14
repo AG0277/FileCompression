@@ -9,16 +9,15 @@
  
 int main()
 {
-    string filePath = "../FileCompression/lorem.txt";
+    string filePath = "lorem.mp3";
     FileOperations files;
     string text = files.LoadFile(filePath);
     HuffmanAlgorithm huffman;
-    string encodedStr = huffman.encodeText(text);
+    std::pair<string,string> encodedStr = huffman.encodeText(text);
+    files.SaveToBinaryFile(encodedStr.first, encodedStr.second);
 
-    // string decodedStr= huffman.decodeText(encodedStr);
-    // files.SaveToTxtFile(encodedStr,huffman.getHuffmanNode());
-    // if( text ==decodedStr )
-    //     std::cout << "equal";
-    // string path = "test.bin";
-    // files.LoadFromBinary(path);
+    string path = "test.dat";
+    std::pair<string,string> encodedString = files.LoadFromBinary(path);
+    string decodedString = huffman.decodeText(encodedString.first, encodedString.second);
+    files.SaveToTxtFile(decodedString);
 }

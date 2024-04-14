@@ -12,6 +12,7 @@ private:
 
 public:
   string LoadFile(const string& path);
-  void SaveToTxtFile(const string &text, const HuffmanNode* node);
-  void LoadFromBinary(const string &path);
+  void SaveToBinaryFile(const string& stringifiedNode,const string& text);
+  void SaveToTxtFile(const string& text);
+  std::pair<string,string> LoadFromBinary(const string &path);
 };

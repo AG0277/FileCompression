@@ -28,13 +28,13 @@ private:
     void serializeNode(const HuffmanNode *node, string& text);
     int index;
     int getIndex();
-    HuffmanNode* readNode(string &text, int index);
+    HuffmanNode* readNode(const string &text, int index);
 
 public:
     HuffmanAlgorithm(): index(0){};
     ~HuffmanAlgorithm();
-    string decodeText(const string& textToDecode);
-    string encodeText(const string& textToEncode);
+    string decodeText(const string& stringifiedHuffmanTree,const string& textToDecode);
+    std::pair<string,string> encodeText(const string& textToEncode);
     HuffmanNode* getHuffmanNode();
 };
 

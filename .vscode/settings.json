@@ -73,6 +73,7 @@
     "string_view": "cpp",
     "numbers": "cpp",
     "cinttypes": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "bitset": "cpp"
   }
 }

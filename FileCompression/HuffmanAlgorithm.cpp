@@ -1,6 +1,10 @@
 #include "HuffmanAlgorithm.h"
 
-
+#include <bitset>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
 
 struct compare {
     bool operator()(HuffmanNode* l, HuffmanNode* r) {
@@ -37,9 +41,12 @@ void HuffmanAlgorithm::BuildHuffmanTree()
     constructedTree =  queue.top();
 }
 
-string HuffmanAlgorithm::decodeText(const string& textToDecode)
+string HuffmanAlgorithm::decodeText(const string& stringifiedHuffmanTree,const string& textToDecode)
 {
+
+    auto HuffmanTree = readNode(stringifiedHuffmanTree,0);
     string decodedString;
+    this->constructedTree = HuffmanTree;
     const HuffmanNode* node = constructedTree;
     for(const char character: textToDecode){
         if(character == '0'){
@@ -56,7 +63,7 @@ string HuffmanAlgorithm::decodeText(const string& textToDecode)
     return decodedString;
 };
 
-string HuffmanAlgorithm::encodeText(const string& textToEncode)
+std::pair<string,string> HuffmanAlgorithm::encodeText(const string& textToEncode)
 {
     this->text = textToEncode;
     BuildHuffmanTree();
@@ -67,28 +74,7 @@ string HuffmanAlgorithm::encodeText(const string& textToEncode)
     string binaryHuffmanTree;
     serializeNode(constructedTree, binaryHuffmanTree);
 
-    //auto text123 = readNode(binaryHuffmanTree,0);
-    
-    std::fstream binFile("test.dat", std::ios::binary | std::ios::out);
-    binFile.write(binaryHuffmanTree.c_str(), binaryHuffmanTree.size());
-    unsigned char byte = 0;
-    int bitsWritten = 0;
-
-    for (char bit : encodedText) {
-        byte <<= 1;
-        if (bit == '1') {
-            byte |= 1;
-        }
-        ++bitsWritten;
-        if (bitsWritten == 8) {
-            binFile.write(reinterpret_cast<const char*>(&byte), sizeof(byte));
-            byte = 0;
-            bitsWritten = 0;
-        }
-    }
-    
-    binFile.close();
-    return encodedText;
+    return std::pair<string,string>{binaryHuffmanTree,encodedText};
 };
 
 void HuffmanAlgorithm::serializeNode(const HuffmanNode* node, string& text){
@@ -110,7 +96,7 @@ int HuffmanAlgorithm::getIndex(){
     return this->index += 1;
 }
 
-HuffmanNode* HuffmanAlgorithm::readNode(string& text, int index)
+HuffmanNode* HuffmanAlgorithm::readNode(const string& text, int index)
 {
     auto test = text[index];
     if (test== 49)
