@@ -18,6 +18,13 @@ void HuffmanAlgorithm::BuildHuffmanTree()
     for(char c:this->text){
         frequencyTable[c]++;
     }
+    auto x = frequencyTable.size();
+    if(frequencyTable.size()<4){
+        frequencyTable['q'] = 10;
+        frequencyTable['w'] = 10;
+        frequencyTable['y'] = 10;
+        frequencyTable['z'] = 10;
+    }
 
     std::priority_queue<std::shared_ptr<HuffmanNode>,std::vector<std::shared_ptr<HuffmanNode>>, compare>queue;
 
