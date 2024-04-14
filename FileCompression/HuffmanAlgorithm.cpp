@@ -7,7 +7,7 @@
 #include <algorithm>
 
 struct compare {
-    bool operator()(HuffmanNode* l, HuffmanNode* r) {
+    bool operator()(const std::shared_ptr<HuffmanNode> l, const std::shared_ptr<HuffmanNode> r) {
         return (l->NuOfAppearances > r->NuOfAppearances);
     }
 };
@@ -19,35 +19,34 @@ void HuffmanAlgorithm::BuildHuffmanTree()
         frequencyTable[c]++;
     }
 
-    std::priority_queue<HuffmanNode*,std::vector<HuffmanNode*>, compare>queue;
+    std::priority_queue<std::shared_ptr<HuffmanNode>,std::vector<std::shared_ptr<HuffmanNode>>, compare>queue;
 
     for( auto pair: frequencyTable){
         string str(1, pair.first);
-        queue.push(new HuffmanNode(str, pair.second));
+        queue.push(std::make_shared<HuffmanNode>(str, pair.second));
     }   
     while(queue.size()>1){
 
-        HuffmanNode *left = queue.top();
+        std::shared_ptr<HuffmanNode> left = queue.top();
         queue.pop();
-        HuffmanNode *right = queue.top();
+        std::shared_ptr<HuffmanNode> right = queue.top();
         queue.pop();
-        auto node = new HuffmanNode(left->character+right->character, left->NuOfAppearances+right->NuOfAppearances);
+        auto node = std::make_shared<HuffmanNode>(left->character+right->character, left->NuOfAppearances+right->NuOfAppearances);
         node->left = left;
         node->right = right;
         queue.push(node);
     }
     string encodedText;
     GenerateHuffmanCode(queue.top());
-    constructedTree =  queue.top();
+    constructedTree = queue.top();
 }
 
 string HuffmanAlgorithm::decodeText(const string& stringifiedHuffmanTree,const string& textToDecode)
 {
-
     auto HuffmanTree = readNode(stringifiedHuffmanTree,0);
     string decodedString;
     this->constructedTree = HuffmanTree;
-    const HuffmanNode* node = constructedTree;
+    std::shared_ptr<HuffmanNode> node = constructedTree;
     for(const char character: textToDecode){
         if(character == '0'){
             node = node->left;
@@ -77,7 +76,7 @@ std::pair<string,string> HuffmanAlgorithm::encodeText(const string& textToEncode
     return std::pair<string,string>{binaryHuffmanTree,encodedText};
 };
 
-void HuffmanAlgorithm::serializeNode(const HuffmanNode* node, string& text){
+void HuffmanAlgorithm::serializeNode(std::shared_ptr<HuffmanNode> node, string& text){
 
     if(node->left == nullptr && node->right==nullptr){
         text += "1";
@@ -89,28 +88,27 @@ void HuffmanAlgorithm::serializeNode(const HuffmanNode* node, string& text){
         serializeNode(node->left, text);
         serializeNode(node->right, text);
     }
-
 }
 
 int HuffmanAlgorithm::getIndex(){
     return this->index += 1;
 }
 
-HuffmanNode* HuffmanAlgorithm::readNode(const string& text, int index)
+std::shared_ptr<HuffmanNode> HuffmanAlgorithm::readNode(const string& text, int index)
 {
     auto test = text[index];
     if (test== 49)
     {
-    auto leaf = new HuffmanNode();
+    auto leaf = std::make_shared<HuffmanNode>();
     leaf->character = text[getIndex()];
     return leaf;
     }
     else{
         int newIndexLeft = getIndex();
-        HuffmanNode* left = ( readNode( text, newIndexLeft));
+        std::shared_ptr<HuffmanNode> left = ( readNode( text, newIndexLeft));
         int newIndexRight = getIndex();
-        HuffmanNode* right =(readNode( text, newIndexRight));
-        auto notLeaf = new HuffmanNode();
+        std::shared_ptr<HuffmanNode> right =(readNode( text, newIndexRight));
+        auto notLeaf = std::make_shared<HuffmanNode>();
         notLeaf->character =left->character + right->character;
         notLeaf->left = left;
         notLeaf->right = right;
@@ -118,7 +116,7 @@ HuffmanNode* HuffmanAlgorithm::readNode(const string& text, int index)
     }
 }
 
-void HuffmanAlgorithm::GenerateHuffmanCode(HuffmanNode *root)
+void HuffmanAlgorithm::GenerateHuffmanCode(std::shared_ptr<HuffmanNode> root)
 {
     if(root->left == nullptr && root->right == nullptr)
     {
@@ -140,9 +138,19 @@ void HuffmanAlgorithm::GenerateHuffmanCode(HuffmanNode *root)
 };
 
 HuffmanNode* HuffmanAlgorithm:: getHuffmanNode(){
-    return constructedTree;
+    
 }
 
 HuffmanAlgorithm::~HuffmanAlgorithm()
 {
+ 
 }
+
+void HuffmanAlgorithm::deleteNode(HuffmanNode* node){
+    // if(node->left == nullptr&& node->right == nullptr){
+    //     delete node;
+    // }
+    // deleteNode(node->left);
+    // deleteNode(node->right);
+}
+

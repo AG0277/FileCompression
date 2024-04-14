@@ -9,9 +9,11 @@
  
 int main()
 {
-    string filePath = "lorem.mp3";
+    string filePath = "lorem.txt";
     FileOperations files;
     string text = files.LoadFile(filePath);
+    text += '\n';
+    text += "asd";
     HuffmanAlgorithm huffman;
     std::pair<string,string> encodedStr = huffman.encodeText(text);
     files.SaveToBinaryFile(encodedStr.first, encodedStr.second);
@@ -20,4 +22,5 @@ int main()
     std::pair<string,string> encodedString = files.LoadFromBinary(path);
     string decodedString = huffman.decodeText(encodedString.first, encodedString.second);
     files.SaveToTxtFile(decodedString);
+    
 }
