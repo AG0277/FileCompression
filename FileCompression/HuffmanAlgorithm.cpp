@@ -43,6 +43,7 @@ void HuffmanAlgorithm::BuildHuffmanTree()
 
 string HuffmanAlgorithm::decodeText(const string& stringifiedHuffmanTree,const string& textToDecode)
 {
+
     auto HuffmanTree = readNode(stringifiedHuffmanTree,0);
     string decodedString;
     this->constructedTree = HuffmanTree;
@@ -72,6 +73,14 @@ std::pair<string,string> HuffmanAlgorithm::encodeText(const string& textToEncode
     }
     string binaryHuffmanTree;
     serializeNode(constructedTree, binaryHuffmanTree);
+    auto it = binaryHuffmanTree.find(10);
+    if(it==std::string::npos)
+    {
+        binaryHuffmanTree += "0";
+    }
+    else{
+        binaryHuffmanTree.insert(it, "1");
+    }
 
     return std::pair<string,string>{binaryHuffmanTree,encodedText};
 };
@@ -96,14 +105,15 @@ int HuffmanAlgorithm::getIndex(){
 
 std::shared_ptr<HuffmanNode> HuffmanAlgorithm::readNode(const string& text, int index)
 {
-    auto test = text[index];
-    if (test== 49)
+
+    if (text[index]== '1')
     {
-    auto leaf = std::make_shared<HuffmanNode>();
-    leaf->character = text[getIndex()];
-    return leaf;
+        auto leaf = std::make_shared<HuffmanNode>();
+        leaf->character = text[getIndex()];
+        return leaf;
     }
-    else{
+    else
+    {
         int newIndexLeft = getIndex();
         std::shared_ptr<HuffmanNode> left = ( readNode( text, newIndexLeft));
         int newIndexRight = getIndex();
@@ -137,9 +147,7 @@ void HuffmanAlgorithm::GenerateHuffmanCode(std::shared_ptr<HuffmanNode> root)
     }
 };
 
-HuffmanNode* HuffmanAlgorithm:: getHuffmanNode(){
-    
-}
+
 
 HuffmanAlgorithm::~HuffmanAlgorithm()
 {

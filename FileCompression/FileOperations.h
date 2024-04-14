@@ -9,7 +9,6 @@ using std::string;
 class FileOperations
 {
 private:
-
 public:
   string LoadFile(const string& path);
   void SaveToBinaryFile(const string& stringifiedNode,const string& text);

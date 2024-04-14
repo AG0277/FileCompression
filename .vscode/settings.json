@@ -74,6 +74,19 @@
     "numbers": "cpp",
     "cinttypes": "cpp",
     "variant": "cpp",
-    "bitset": "cpp"
+    "bitset": "cpp",
+    "any": "cpp",
+    "chrono": "cpp",
+    "codecvt": "cpp",
+    "complex": "cpp",
+    "cstdarg": "cpp",
+    "map": "cpp",
+    "ratio": "cpp",
+    "iomanip": "cpp",
+    "semaphore": "cpp",
+    "sstream": "cpp",
+    "stop_token": "cpp",
+    "thread": "cpp",
+    "typeindex": "cpp"
   }
 }

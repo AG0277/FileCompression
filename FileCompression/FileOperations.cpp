@@ -12,13 +12,17 @@ using bits_in_byte = std::bitset<BITS_PER_BYTE> ;
     myFile.open(path);
     string line;
     if(myFile.is_open()){
-        while(std::getline(myFile,line)){
-            content += line;
-        }
+        char ch;
+        while (myFile.get(ch)) {
+            content += ch;
+    }
     }
     else{
         std::cerr << "Error: unable to open file " << path << "\n";
     }
+    auto sw = content[1];
+        auto sw1 = content[2];
+            auto sw2 = content[3];
     return content;
 }
 
@@ -49,6 +53,7 @@ void FileOperations::SaveToBinaryFile(const string& stringifiedNode,const string
     
     binFile.close();
 }
+
 void FileOperations::SaveToTxtFile(const string& text){
     std::fstream outputFile("testt.txt", std::ios::out);
     outputFile << text;
@@ -60,12 +65,29 @@ std::pair<string,string> FileOperations::LoadFromBinary(const string& path){
 
     std::streampos fileSize;
     std::ifstream file(path, std::ios::binary);
-    string serializedTree;
-    getline(file, serializedTree);
+    string encodedTree;
+    string line;
+    getline(file, encodedTree);
+    int tttt = encodedTree.size()-1;
+    int hasNewLine = encodedTree[tttt];
     string decodedData;
+    if(hasNewLine ==49){
+        encodedTree.pop_back();
+        encodedTree += '\n';
+        getline(file, line);
+        if(line!="")
+        encodedTree += line;
 
-    char c ;
-    while( file.get(c) )
-        decodedData += bits_in_byte( byte(c) ).to_string() ;
-    return std::pair<string, string>{serializedTree, decodedData};
+    }
+    else{
+        encodedTree.pop_back();
+    }
+
+        char c ;
+        while( file.get(c) )
+        {
+            decodedData += bits_in_byte( byte(c) ).to_string() ;
+        }
+    
+    return std::pair<string, string>{encodedTree, decodedData};
 }

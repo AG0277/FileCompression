@@ -40,6 +40,5 @@ public:
     ~HuffmanAlgorithm();
     string decodeText(const string& stringifiedHuffmanTree,const string& textToDecode);
     std::pair<string,string> encodeText(const string& textToEncode);
-    HuffmanNode* getHuffmanNode();
 };
 

@@ -12,8 +12,7 @@ int main()
     string filePath = "lorem.txt";
     FileOperations files;
     string text = files.LoadFile(filePath);
-    text += '\n';
-    text += "asd";
+    std::cout << text;
     HuffmanAlgorithm huffman;
     std::pair<string,string> encodedStr = huffman.encodeText(text);
     files.SaveToBinaryFile(encodedStr.first, encodedStr.second);
